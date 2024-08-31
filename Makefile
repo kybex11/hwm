@@ -1,7 +1,6 @@
-WM_SRC = ./src/hwm.c
-WM_OBJ := $(WM_SRC:.c=.o)
-all: build hwm
+WM_SRC = ./src/uwm.c
 
-hwm: $(WM_OBJ)
+all: build
 
-build: gcc -o hwm $(WM_SRC) -lX11
+build: 
+	gcc -o uwm $(WM_SRC) -lX11
