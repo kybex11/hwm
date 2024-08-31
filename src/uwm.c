@@ -53,7 +53,7 @@ int main() {
     WM wm;
     wm.display = XOpenDisplay(NULL);
     if (!wm.display) {
-        printf(stderr, "Nevozmojno otkrit' display\n");
+        fprintf(stderr, "Nevozmojno otkrit' display\n");
         return 1;
     }
     wm.root = RootWindow(wm.display, DefaultScreen(wm.display));
