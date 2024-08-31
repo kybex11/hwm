@@ -1,4 +1,4 @@
-#include "hwm.h"
+#include "uwm.h"
 
 typedef struct Client {
     Window window;
