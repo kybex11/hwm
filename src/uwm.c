@@ -16,7 +16,7 @@ void handleEvent(WM* wm, XEvent* event) {
         case KeyPress:
             if (event -> xkey.keycode == XKeysymToKeycode(wm->display, XK_c) &&
                 event -> xkey.state & Mod4Mask && event -> xkey.state & ShiftMask) {
-                system("xterm &");
+                system("xterm");
             }
             break;
         case MapRequest:
